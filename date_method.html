@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date & Time</title>
+</head>
+<body>
+  <script>
+    var now = new Date();
+
+    document.write("Date String: " + now.toDateString() + "<br>");
+    document.write("Date: " + now.getDate() + "<br>");
+    document.write("Month: " + (now.getMonth() + 1) + "<br>"); // Adding 1 because Jan = 0
+    document.write("Day of Week: " + now.getDay() + "<br>");
+    document.write("Year: " + now.getFullYear() + "<br>");
+    document.write("Hours: " + now.getHours() + "<br>");
+    document.write("Minutes: " + now.getMinutes() + "<br>");
+    document.write("Seconds: " + now.getSeconds() + "<br>");
+    document.write("Local Date: " + now.toLocaleDateString() + "<br>");
+    document.write("Local Time: " + now.toLocaleTimeString() + "<br>");
+  </script>
+</body>
+</html>

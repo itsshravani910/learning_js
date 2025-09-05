@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array modify,delete
+        var a=["shravani",21,"bsc it","software enginner"];
+        document.write(a + "<br>");
+        a[2]="bcs";
+        document.write(a + "<br>");
+
+        delete a[1];
+         document.write(a + "<br>");
+    </script>
+
+     <script>
+        //assending order 
+        var b=["kavyaa","nandini","shravani","nagesh","ridhansg"];
+          document.write(b + "<br>");
+          b.sort();
+           document.write(b + "<br>");
+//desending order
+           b.reverse();
+            document.write(b + "<br>");
+    </script>
+
+    <script>
+        //push,pop (last name remove honar),shift (1st nav remove honar ),unshift(1st la new value add)
+        var c=["kavyaa","nandini","shravani"];
+        document.write(c + "<br>");
+        c.shift();
+        document.write(c + "<br>");
+        c.unshift("abc");
+        document.write(c + "<br>");
+
+    </script>
+
+    <script>
+    var a = ["ab", "xy"];
+    var b = ["shravani", "phutane"];
+    var z= ["obc","hii"];
+    var c = a.concat(b,z);
+    document.write(c + "<br>"); 
+    
+    var d = c.join("/");
+    document.write(d + "<br>");
+</script>
+
+
+</body>
+</html>

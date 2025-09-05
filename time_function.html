@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Clock with Counter</title>
+</head>
+<body>
+
+  <!-- Digital Clock -->
+  <h1>Digital Clock</h1>
+  <h1 id="clock"></h1>
+
+  <!-- Counter -->
+  <h1>Counter</h1>
+  <h1 id="count">0</h1>
+  <button onclick="stopCounter()">Stop</button>
+
+  <h3 id ="msg" > h ellooo bokyaaa....</h3>
+
+  <script>
+    setTimeout(function(){
+        document.getElementById('msg').innerHTML="Hello shravani";
+    },5000);
+  </script>
+
+  <script>
+    // ---------- Digital Clock ----------
+    function showTime() {
+      let now = new Date();
+      let time = now.toLocaleTimeString();
+      document.getElementById("clock").innerHTML = time;
+    }
+
+    setInterval(showTime, 1000); // update clock every second
+
+    // ---------- Counter ----------
+    let count = 0;
+    let counterInterval = setInterval(() => {
+      count++;
+      document.getElementById("count").innerHTML = count;
+    }, 1000);
+
+    function stopCounter() {
+      clearInterval(counterInterval);
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
